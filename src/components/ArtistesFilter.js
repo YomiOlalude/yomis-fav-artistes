@@ -34,14 +34,14 @@ const ArtistesFilter = ({artistes}) => {
         )
     })
 
-    let discography = getUnique(artistes, "albums");
-    discography = discography.map((item, index) => {
-        return (
-            <option key={index} value={item}>
-                {item}
-            </option>
-        )
-    })
+    // let discography = getUnique(artistes, "albums");
+    // discography = discography.map((item, index) => {
+    //     return (
+    //         <option key={index} value={item}>
+    //             {item}
+    //         </option>
+    //     )
+    // })
     
     return (
         <section className="filter-container">
@@ -61,7 +61,7 @@ const ArtistesFilter = ({artistes}) => {
                 {/* guests */}
                 <div className="form-group">
                     <label htmlFor="albums">
-                        {albums} {albums > 1 || albums == 0 ? "Albums" : "Album"}
+                        {albums} {albums > 1 || albums === 0 ? "Albums" : "Album"}
                     </label>
                    <input type="range" name="albums" min={0} max={maxAlbums}
                         id="albums" value={albums} onChange={handleChange}

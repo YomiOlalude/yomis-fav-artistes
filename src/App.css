@@ -195,8 +195,8 @@ h6 {
 }
 
 .banner h2 {
-  font-size: 50px;
-  font-weight:lighter;
+  font-size: 35px;
+  font-weight: lighter;
 }
 .banner div {
   width: 5rem;
@@ -232,7 +232,7 @@ h6 {
   margin-top: 1rem;
 }
 .section-title h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
@@ -412,7 +412,7 @@ h6 {
   margin-bottom: 0.1rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   .single-artiste-images,
   .single-artiste-info,
   .room-extras {
@@ -421,11 +421,34 @@ h6 {
   }
   .single-artiste-info {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
   }
   .info {
     padding-left: 3rem;
+  }
+  .info-container {
+    display: flex;
+  }
+  .info {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .single-artiste-images,
+  .single-artiste-info,
+  .room-extras {
+    width: 95vw;
+    max-width: 1170px;
+  }
+  .single-artiste-info {
+    display: block;
+  }
+  .info-container {
+    display: flex;
+  }
+  .info {
+    margin-right: 60px;
   }
 }
 /* end of single room*/
@@ -512,4 +535,5 @@ h6 {
     max-width: 1170px;
   }
 }
+
 /* end of rooms fitler*/

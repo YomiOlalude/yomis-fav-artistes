@@ -48,8 +48,8 @@ class ArtisteProvider extends Component {
         let tempItems = items.map(item => {
             let id = item.sys.id;
             let images = item.fields.images.map(image => image.fields.file.url);
-            let spotify = item.fields.links.spotify
-            let youtube = item.fields.links.youtube
+            // let spotify = item.fields.links.spotify
+            // let youtube = item.fields.links.youtube
             let artiste = {...item.fields, ...item.fields.links, images, id};
 
             return artiste;
