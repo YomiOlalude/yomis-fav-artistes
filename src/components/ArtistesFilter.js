@@ -34,15 +34,6 @@ const ArtistesFilter = ({artistes}) => {
         )
     })
 
-    // let discography = getUnique(artistes, "albums");
-    // discography = discography.map((item, index) => {
-    //     return (
-    //         <option key={index} value={item}>
-    //             {item}
-    //         </option>
-    //     )
-    // })
-    
     return (
         <section className="filter-container">
             <Title title="artistes" />
